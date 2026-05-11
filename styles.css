@@ -1,0 +1,61 @@
+:root {
+  --base-color: ##9caf88;
+  --text-color: #000000;
+  --primary-color: #ffc06e;
+  --secondary-color: #8D8DFF;
+  --color-1: #F9F6F3;
+  --color-2: #F3F7F9;
+  --color-3: #F6F3F9;
+}
+
+body {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+}
+
+#nav {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+}
+
+#nav li {
+  list-style-type: none;
+}
+
+#nav a {
+  color: black;
+  font-size: 20px;
+}
+
+#nav a:hover {
+  color: grey;
+}
+
+#nav li: active {
+  color: green;
+}
+
+.collapsible {
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+}
+
+.active, .collapsible:hover {
+  background-color: #ccc;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
