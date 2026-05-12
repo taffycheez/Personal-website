@@ -1,0 +1,408 @@
+/* Responsive Design - Mobile First Approach */
+
+/* Tablet and Up (768px) */
+@media (min-width: 768px) {
+  /* Typography adjustments */
+  html {
+    font-size: 16px;
+  }
+  
+  /* Container padding */
+  .container {
+    padding: 0 var(--space-6);
+  }
+  
+  /* Grid improvements */
+  .grid-cols-md-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .grid-cols-md-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  /* Hero adjustments */
+  .hero {
+    padding: var(--space-16) 0;
+  }
+  
+  .hero-cta {
+    justify-content: center;
+  }
+  
+  /* Two column layout */
+  .two-column {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  /* Section spacing */
+  section {
+    padding: var(--space-16) 0;
+  }
+  
+  /* Cards in grid */
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Desktop (1024px and up) */
+@media (min-width: 1024px) {
+  /* Show desktop nav, hide mobile */
+  .nav-desktop {
+    display: flex;
+  }
+  
+  .mobile-menu-toggle {
+    display: none;
+  }
+  
+  /* Grid improvements */
+  .grid-cols-lg-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .grid-cols-lg-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  /* Card grid */
+  .card-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  /* Feature boxes */
+  .feature-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  /* Footer */
+  .footer-content {
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+  }
+}
+
+/* Large Desktop (1280px and up) */
+@media (min-width: 1280px) {
+  .container {
+    padding: 0 var(--space-8);
+  }
+  
+  /* Grid improvements */
+  .grid-cols-xl-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  /* Larger sections */
+  section {
+    padding: var(--space-20) 0;
+  }
+}
+
+/* Mobile Specific Styles (below 768px) */
+@media (max-width: 767px) {
+  /* Base font size */
+  html {
+    font-size: 14px;
+  }
+  
+  /* Hide desktop navigation */
+  .nav-desktop {
+    display: none;
+  }
+  
+  /* Show mobile menu toggle */
+  .mobile-menu-toggle {
+    display: flex;
+  }
+  
+  /* Typography adjustments */
+  h1 {
+    font-size: var(--font-size-3xl);
+  }
+  
+  h2 {
+    font-size: var(--font-size-2xl);
+  }
+  
+  h3 {
+    font-size: var(--font-size-xl);
+  }
+  
+  /* Hero adjustments */
+  .hero {
+    min-height: auto;
+    padding: var(--space-10) 0;
+  }
+  
+  .hero-title {
+    font-size: var(--font-size-3xl);
+  }
+  
+  .hero-subtitle {
+    font-size: var(--font-size-md);
+  }
+  
+  .hero-cta {
+    flex-direction: column;
+    gap: var(--space-3);
+  }
+  
+  .hero-cta .btn {
+    width: 100%;
+  }
+  
+  /* Avatar sizes */
+  .avatar-xl {
+    width: 150px;
+    height: 150px;
+  }
+  
+  /* Section spacing */
+  section {
+    padding: var(--space-8) 0;
+  }
+  
+  /* Card adjustments */
+  .card {
+    padding: var(--space-5);
+  }
+  
+  /* Grid to single column */
+  .grid-auto,
+  .grid-cols-2,
+  .grid-cols-3,
+  .grid-cols-4 {
+    grid-template-columns: 1fr;
+  }
+  
+  /* Two column to single */
+  .two-column {
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
+  }
+  
+  /* Stack buttons */
+  .btn-group {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .btn-group .btn {
+    width: 100%;
+  }
+  
+  /* Form adjustments */
+  input, textarea, select {
+    font-size: 16px; /* Prevent zoom on iOS */
+  }
+  
+  /* Scroll to top button */
+  .scroll-to-top {
+    bottom: var(--space-4);
+    right: var(--space-4);
+    width: 44px;
+    height: 44px;
+  }
+  
+  /* Footer */
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
+  }
+  
+  /* Page header */
+  .page-header {
+    padding: var(--space-8) 0 var(--space-6);
+  }
+  
+  /* Section header */
+  .section-header {
+    margin-bottom: var(--space-6);
+  }
+  
+  /* Reduce shadows on mobile */
+  .card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+  }
+  
+  /* Simplify animations on mobile */
+  .animate-fade-in-up {
+    animation-duration: 0.4s;
+  }
+  
+  /* Badge adjustments */
+  .badge, .tag {
+    font-size: var(--font-size-xs);
+    padding: var(--space-1) var(--space-2);
+  }
+  
+  /* Social links */
+  .social-links {
+    justify-content: center;
+  }
+  
+  /* Focus areas tags */
+  .focus-areas {
+    justify-content: center;
+  }
+}
+
+/* Tablet Portrait (768px to 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* Show mobile menu on tablets */
+  .nav-desktop {
+    display: none;
+  }
+  
+  .mobile-menu-toggle {
+    display: flex;
+  }
+  
+  /* Hero adjustments for tablet */
+  .hero-image img {
+    width: 180px;
+    height: 180px;
+  }
+  
+  /* Grid adjustments */
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  /* Footer */
+  .footer-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Print Styles */
+@media print {
+  /* Hide non-essential elements */
+  header,
+  .mobile-menu-toggle,
+  .mobile-overlay,
+  .nav-mobile,
+  .scroll-to-top,
+  .hero-canvas,
+  footer {
+    display: none !important;
+  }
+  
+  /* Reset colors */
+  body {
+    background: white;
+    color: black;
+  }
+  
+  /* Simplify cards */
+  .card {
+    border: 1px solid #ddd;
+    box-shadow: none;
+    page-break-inside: avoid;
+  }
+  
+  /* Show links */
+  a[href]::after {
+    content: " (" attr(href) ")";
+    font-size: 0.8em;
+  }
+  
+  /* Page breaks */
+  h1, h2, h3 {
+    page-break-after: avoid;
+  }
+}
+
+/* High DPI / Retina Displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  /* Optimize images for retina */
+  img {
+    image-rendering: -webkit-optimize-contrast;
+  }
+}
+
+/* Landscape Mobile */
+@media (max-width: 767px) and (orientation: landscape) {
+  .hero {
+    min-height: auto;
+    padding: var(--space-6) 0;
+  }
+  
+  .hero-image img {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+/* Ultra-wide screens */
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1400px;
+  }
+  
+  .hero {
+    padding: var(--space-20) 0;
+  }
+}
+
+/* Container Queries would go here when widely supported */
+/* For now, using traditional media queries */
+
+/* Touch Device Optimizations */
+@media (hover: none) and (pointer: coarse) {
+  /* Larger tap targets */
+  .btn {
+    min-height: 44px;
+    min-width: 44px;
+  }
+  
+  .nav-link {
+    padding: var(--space-3) var(--space-4);
+  }
+  
+  .social-link {
+    width: 48px;
+    height: 48px;
+  }
+  
+  /* Remove hover effects on touch devices */
+  .hover-lift:hover,
+  .hover-scale:hover,
+  .hover-glow:hover {
+    transform: none;
+    box-shadow: inherit;
+  }
+  
+  /* Simplify card hovers */
+  .card:hover {
+    transform: none;
+  }
+}
+
+/* Forced Colors Mode (High Contrast) */
+@media (prefers-contrast: high) {
+  :root {
+    --shadow-sm: none;
+    --shadow-md: none;
+    --shadow-lg: none;
+    --shadow-xl: none;
+  }
+  
+  .card,
+  .btn,
+  input,
+  textarea {
+    border: 2px solid currentColor;
+  }
+}
+
+/* Dark Background Support (if user has dark system theme) */
+/* Note: We're not implementing full dark mode, but ensuring readability */
+@media (prefers-color-scheme: dark) {
+  /* Keep light theme but ensure canvas is visible */
+  .hero-canvas {
+    opacity: 0.8;
+  }
+}

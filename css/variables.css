@@ -1,0 +1,125 @@
+/* Design Tokens - CSS Custom Properties */
+
+:root {
+  /* Colors - Elegant Palette with Browns */
+  --color-primary: #95a483;      /* Muted sage */
+  --color-primary-dark: #7a8a6d;
+  --color-primary-light: #aab897;
+  
+  --color-secondary: #987284;    /* Dusty rose/mauve */
+  --color-secondary-dark: #81606e;
+  --color-secondary-light: #b08c9d;
+  
+  --color-accent: #cccdc7;       /* Elegant warm gray */
+  --color-accent-dark: #b5b6b1;
+  --color-accent-light: #e0e1dd;
+  
+  --color-brown: #8B7355;        /* Warm brown */
+  --color-brown-dark: #6B5644;
+  --color-brown-light: #A58C73;
+  
+  /* Extended Palette */
+  --color-forest: #5a6b4f;
+  --color-cream: #f5f5f3;
+  --color-white: #ffffff;
+  --color-charcoal: #3a3a3a;
+  --color-slate: #6b6b6b;
+  --color-light-gray: #e8e8e6;
+  --color-border: #d8d9d5;
+  
+  /* Semantic Colors */
+  --color-text-primary: #3a3a3a;
+  --color-text-secondary: #6b6b6b;
+  --color-text-tertiary: #8a8a8a;
+  --color-bg-primary: #f5f5f3;
+  --color-bg-secondary: #ffffff;
+  --color-bg-tertiary: #e8e8e6;
+  
+  /* Voronoi Visualization Colors */
+  --color-voronoi-1: rgba(149, 164, 131, 0.08);
+  --color-voronoi-2: rgba(152, 114, 132, 0.06);
+  --color-voronoi-3: rgba(139, 115, 85, 0.05);
+  
+  /* Spacing System (8px base) */
+  --space-1: 0.25rem;   /* 4px */
+  --space-2: 0.5rem;    /* 8px */
+  --space-3: 0.75rem;   /* 12px */
+  --space-4: 1rem;      /* 16px */
+  --space-5: 1.5rem;    /* 24px */
+  --space-6: 2rem;      /* 32px */
+  --space-8: 3rem;      /* 48px */
+  --space-10: 4rem;     /* 64px */
+  --space-12: 6rem;     /* 96px */
+  --space-16: 8rem;     /* 128px */
+  --space-20: 10rem;    /* 160px */
+  
+  /* Typography Scale (1.250 - Major Third) */
+  --font-size-xs: 0.64rem;      /* 10.24px */
+  --font-size-sm: 0.8rem;       /* 12.8px */
+  --font-size-base: 1rem;       /* 16px */
+  --font-size-md: 1.25rem;      /* 20px */
+  --font-size-lg: 1.563rem;     /* 25px */
+  --font-size-xl: 1.953rem;     /* 31.25px */
+  --font-size-2xl: 2.441rem;    /* 39px */
+  --font-size-3xl: 3.052rem;    /* 48.8px */
+  --font-size-4xl: 3.815rem;    /* 61px */
+  
+  /* Font Families */
+  --font-heading: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  --font-body: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-code: 'JetBrains Mono', 'Courier New', monospace;
+  
+  /* Font Weights */
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-black: 900;
+  
+  /* Line Heights */
+  --line-height-tight: 1.2;
+  --line-height-normal: 1.6;
+  --line-height-relaxed: 1.8;
+  
+  /* Border Radius */
+  --radius-sm: 0.25rem;   /* 4px */
+  --radius-md: 0.5rem;    /* 8px */
+  --radius-lg: 0.75rem;   /* 12px */
+  --radius-xl: 1rem;      /* 16px */
+  --radius-full: 9999px;
+  
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  
+  /* Transitions */
+  --transition-fast: 0.15s ease;
+  --transition-base: 0.3s ease;
+  --transition-slow: 0.5s ease;
+  --transition-bounce: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  
+  /* Z-index Scale */
+  --z-base: 0;
+  --z-dropdown: 1000;
+  --z-sticky: 1100;
+  --z-fixed: 1200;
+  --z-modal-backdrop: 1300;
+  --z-modal: 1400;
+  --z-popover: 1500;
+  --z-tooltip: 1600;
+  
+  /* Layout */
+  --container-max-width: 1200px;
+  --container-padding: var(--space-5);
+  --header-height: 70px;
+  
+  /* Responsive Breakpoints (for JS) */
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
+}

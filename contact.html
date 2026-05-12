@@ -1,45 +1,303 @@
 <!DOCTYPE html>
-
 <html lang="en">
-    <head>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-        <link href="styles.css" rel="stylesheet">
-        <title>Varya Kern</title>
-        <link rel="icon" type="image/x-icon" href="favicon.ico">
-    </head>
-    <body>
-        <div class = "header">
-            <img src="headshot.JPG" alt="Headshot of Varya" style="float:left;width:200px;height:200px;">
-            <h1>Varya Kern</h1>
-            <h2>
-                <a href="https://www.linkedin.com/in/varya-kern-a25baa2a2/">
-                    <img src="linkedin_logo.jpg" alt="LinkedIn Logo" width="50" height="50">
-                </a>
-                <a href="https://github.com/taffycheez">
-                    <img src="github_logo.png" alt="GitHub logo" width="50" height="50">
-                </a>
-            </h2>
-            <ul id = "nav">
-                <li><a class="active" href="index.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-            <br><br><br>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Varya Kern - Open to data science internships and collaborations">
+    <meta name="keywords" content="contact, internship, data science, collaboration">
+    <meta name="author" content="Varya Kern">
+    
+    <title>Contact | Varya Kern</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/typography.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Skip to Main Content -->
+    <a href="#main-content" class="skip-to-main">Skip to main content</a>
+    
+    <!-- Header / Navigation -->
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">Varya Kern</a>
+            
+            <!-- Desktop Navigation -->
+            <nav class="nav-desktop" aria-label="Main navigation">
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link">About</a></li>
+                    <li><a href="projects.html" class="nav-link">Projects</a></li>
+                    <li><a href="blog.html" class="nav-link">Blog</a></li>
+                    <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
+                <span class="hamburger"></span>
+            </button>
         </div>
-        <div class = "body">
-
+    </header>
+    
+    <!-- Mobile Navigation Drawer -->
+    <nav class="nav-mobile" aria-label="Mobile navigation" aria-hidden="true">
+        <ul class="nav-mobile-links">
+            <li><a href="index.html" class="nav-mobile-link">About</a></li>
+            <li><a href="projects.html" class="nav-mobile-link">Projects</a></li>
+            <li><a href="blog.html" class="nav-mobile-link">Blog</a></li>
+            <li><a href="contact.html" class="nav-mobile-link active">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Mobile Overlay -->
+    <div class="mobile-overlay"></div>
+    
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Page Header -->
+        <div class="page-header">
+            <div class="container">
+                <h1 class="page-title animate-fade-in-up">Let's Connect</h1>
+                <p class="page-description animate-fade-in-up delay-100">
+                    I'm actively seeking Summer 2026-2027 internships in data science and quantitative analysis.<br>
+                    Open to collaborations and always happy to discuss data, mathematics, and literature.
+                </p>
+            </div>
         </div>
-        <div class="footer">
-            <form>
-                <label for="name">Name/Company:</label><br>
-                <input type="text" id="name"><br>
-                <label for="email">Email:</label><br>
-                <input type="email" id="email"><br><br>
-                <input type="submit">
-            </form>
+        
+        <!-- Contact Content -->
+        <section class="container">
+            <div class="two-column" style="gap: var(--space-10);">
+                <!-- Contact Form -->
+                <div class="card fade-in-section">
+                    <div class="card-header">
+                        <h2 class="card-title"><i class="fas fa-paper-plane"></i> Send Me a Message</h2>
+                    </div>
+                    <div class="card-body">
+                        <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                            <div class="input-group">
+                                <label for="name">Name / Organization *</label>
+                                <input type="text" id="name" name="name" required placeholder="Your name or company">
+                            </div>
+                            
+                            <div class="input-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                            </div>
+                            
+                            <div class="input-group">
+                                <label for="subject">Subject *</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="">Select a subject...</option>
+                                    <option value="internship">Internship Opportunity</option>
+                                    <option value="collaboration">Collaboration Proposal</option>
+                                    <option value="project">Project Inquiry</option>
+                                    <option value="general">General Message</option>
+                                </select>
+                            </div>
+                            
+                            <div class="input-group">
+                                <label for="message">Message *</label>
+                                <textarea id="message" name="message" required rows="6" placeholder="Tell me about your inquiry..." minlength="20"></textarea>
+                            </div>
+                            
+                            <!-- Honeypot field for spam protection -->
+                            <input type="text" name="_gotcha" style="display:none">
+                            
+                            <button type="submit" class="btn btn-primary btn-lg w-full">
+                                <i class="fas fa-send"></i> Send Message
+                            </button>
+                            
+                            <p class="text-sm text-tertiary mt-3">
+                                <i class="fas fa-info-circle"></i> I typically respond within 24-48 hours.
+                            </p>
+                        </form>
+                    </div>
+                </div>
+                
+                <!-- Contact Information -->
+                <div>
+                    <div class="card fade-in-section">
+                        <div class="card-header">
+                            <h2 class="card-title"><i class="fas fa-info-circle"></i> Contact Information</h2>
+                        </div>
+                        <div class="card-body">
+                            <div class="mb-5">
+                                <h4><i class="fas fa-envelope"></i> Email</h4>
+                                <p><a href="mailto:varya.kern@gmail.com">varya.kern@gmail.com</a></p>
+                            </div>
+                            
+                            <div class="mb-5">
+                                <h4><i class="fas fa-map-marker-alt"></i> Location</h4>
+                                <p>Christchurch / Hamilton, New Zealand<br>
+                                University of Canterbury</p>
+                            </div>
+                            
+                            <div class="mb-5">
+                                <h4><i class="fas fa-calendar-check"></i> Availability</h4>
+                                <p>Seeking <strong>Summer 2026-2027</strong> internships<br>
+                                Open to:<br>
+                                • Full-time internships (summer break)<br>
+                                • Part-time opportunities (during semester)<br>
+                                • Remote, Christchurch, or Hamilton-based roles</p>
+                            </div>
+                            
+                            <div class="mb-5">
+                                <h4><i class="fas fa-clock"></i> Response Time</h4>
+                                <p>I typically respond within 24-48 hours.<br>
+                                Feel free to follow up if you don't hear back!</p>
+                            </div>
+                            
+                            <div>
+                                <h4><i class="fas fa-share-alt"></i> Connect on Social Media</h4>
+                                <div class="social-links mt-3">
+                                    <a href="https://www.linkedin.com/in/varya-kern-a25baa2a2/" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </a>
+                                    <a href="https://github.com/taffycheez" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="mailto:varya.kern@gmail.com" class="social-link" aria-label="Email">
+                                        <i class="fas fa-envelope"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Internship Focus Card -->
+                    <div class="card fade-in-section mt-6" style="background: linear-gradient(135deg, rgba(149, 164, 131, 0.1), rgba(152, 114, 132, 0.1));">
+                        <div class="card-body">
+                            <h3><i class="fas fa-bullseye"></i> What I'm Looking For</h3>
+                            <p class="mt-3">I'm particularly interested in opportunities that combine:</p>
+                            <ul class="mt-3">
+                                <li><strong>Data Science & Analytics</strong> - Working with real-world datasets</li>
+                                <li><strong>Quantitative Analysis</strong> - Statistical modeling and problem-solving</li>
+                                <li><strong>Learning Environment</strong> - Mentorship and growth opportunities</li>
+                                <li><strong>Machine Learning</strong> - Practical ML applications</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- FAQ Section -->
+        <section class="container">
+            <div class="section-header fade-in-section">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+            </div>
+            
+            <div class="grid-auto fade-in-section">
+                <div class="card">
+                    <h3><i class="fas fa-question-circle"></i> Are you available for freelance work?</h3>
+                    <p class="text-secondary mt-3">
+                        Currently focused on my studies and seeking internship opportunities. However, 
+                        I'm open to discussing small data analysis or web development projects that align 
+                        with my schedule.
+                    </p>
+                </div>
+                
+                <div class="card">
+                    <h3><i class="fas fa-question-circle"></i> Can you help with my data science project?</h3>
+                    <p class="text-secondary mt-3">
+                        I'm always interested in collaborative learning opportunities! Feel free to reach out 
+                        if you have an interesting project idea, especially if it involves data analysis or 
+                        statistical modeling.
+                    </p>
+                </div>
+                
+                <div class="card">
+                    <h3><i class="fas fa-question-circle"></i> Do you offer tutoring services?</h3>
+                    <p class="text-secondary mt-3">
+                        I currently tutor through the University of Canterbury and Accelerate Tuition for 
+                        high school and first-year university mathematics. Feel free to inquire about availability.
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Alternative Contact Methods -->
+        <section class="container">
+            <div class="card fade-in-section text-center">
+                <div class="card-body">
+                    <h2><i class="fas fa-handshake"></i> Prefer to Connect Another Way?</h2>
+                    <p class="lead mt-4">
+                        You can also reach me directly via email or connect on LinkedIn
+                    </p>
+                    <div class="flex gap-4 justify-content-center flex-wrap mt-6">
+                        <a href="mailto:varya.kern@gmail.com" class="btn btn-primary btn-lg">
+                            <i class="fas fa-envelope"></i> Email Me Directly
+                        </a>
+                        <a href="https://www.linkedin.com/in/varya-kern-a25baa2a2/" class="btn btn-secondary btn-lg" target="_blank" rel="noopener">
+                            <i class="fab fa-linkedin-in"></i> Connect on LinkedIn
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Varya Kern</h3>
+                    <p>Data Science & Mathematics Student<br>
+                    University of Canterbury<br>
+                    Christchurch, New Zealand</p>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/varya-kern-a25baa2a2/" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/taffycheez" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:varya.kern@gmail.com" class="social-link" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Navigation</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">About</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Connect</h3>
+                    <p>Open to internship opportunities and collaborations.</p>
+                    <p><a href="mailto:varya.kern@gmail.com">varya.kern@gmail.com</a></p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Varya Kern. All rights reserved.</p>
+            </div>
         </div>
-    </body>
+    </footer>
+    
+    <!-- JavaScript -->
+    <script src="js/navigation.js"></script>
+    <script src="js/scroll-animations.js"></script>
+    <script src="js/main.js"></script>
+</body>
 </html>

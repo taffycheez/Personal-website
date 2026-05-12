@@ -1,38 +1,299 @@
 <!DOCTYPE html>
-
 <html lang="en">
-    <head>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-        <link href="styles.css" rel="stylesheet">
-        <title>Varya Kern</title>
-        <link rel="icon" type="image/x-icon" href="favicon.ico">
-    </head>
-    <body>
-        <div class = "header">
-            <img src="headshot.JPG" alt="Headshot of Varya" style="float:left;width:200px;height:200px;">
-            <h1>Varya Kern</h1>
-            <h2>
-                <a href="https://www.linkedin.com/in/varya-kern-a25baa2a2/">
-                    <img src="linkedin_logo.jpg" alt="LinkedIn Logo" width="50" height="50">
-                </a>
-                <a href="https://github.com/taffycheez">
-                    <img src="github_logo.png" alt="GitHub logo" width="50" height="50">
-                </a>
-            </h2>
-            <ul id = "nav">
-                <li><a class="active" href="index.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-            <br><br><br>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blog by Varya Kern - Essays on literature, philosophy, and STEM topics">
+    <meta name="keywords" content="blog, literature, philosophy, STEM, essays">
+    <meta name="author" content="Varya Kern">
+    
+    <title>Blog | Varya Kern</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/typography.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Skip to Main Content -->
+    <a href="#main-content" class="skip-to-main">Skip to main content</a>
+    
+    <!-- Header / Navigation -->
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">Varya Kern</a>
+            
+            <!-- Desktop Navigation -->
+            <nav class="nav-desktop" aria-label="Main navigation">
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link">About</a></li>
+                    <li><a href="projects.html" class="nav-link">Projects</a></li>
+                    <li><a href="blog.html" class="nav-link active">Blog</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
+                <span class="hamburger"></span>
+            </button>
         </div>
-        <div class = "body">
-            <a href="blogs/blog1.html">Blog 1</a><br>
-            <a href="blogs/blog1.html">Blog 2</a><br>
-            <a href="blogs/blog1.html">Blog 3</a><br>
+    </header>
+    
+    <!-- Mobile Navigation Drawer -->
+    <nav class="nav-mobile" aria-label="Mobile navigation" aria-hidden="true">
+        <ul class="nav-mobile-links">
+            <li><a href="index.html" class="nav-mobile-link">About</a></li>
+            <li><a href="projects.html" class="nav-mobile-link">Projects</a></li>
+            <li><a href="blog.html" class="nav-mobile-link active">Blog</a></li>
+            <li><a href="contact.html" class="nav-mobile-link">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Mobile Overlay -->
+    <div class="mobile-overlay"></div>
+    
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Page Header -->
+        <div class="page-header">
+            <div class="container">
+                <h1 class="page-title animate-fade-in-up">Essays & Reflections</h1>
+                <p class="page-description animate-fade-in-up delay-100">
+                    Thoughts on literature, philosophy, and STEM
+                </p>
+            </div>
         </div>
-    </body>
+        
+        <!-- Filter Controls -->
+        <section class="container">
+            <div class="card fade-in-section">
+                <div class="card-body">
+                    <div class="flex-between flex-wrap gap-4">
+                        <div>
+                            <h3 class="mb-3"><i class="fas fa-filter"></i> Browse by Category</h3>
+                            <div class="flex gap-2 flex-wrap">
+                                <button class="btn btn-sm btn-primary active" data-filter="all">All Posts</button>
+                                <button class="btn btn-sm btn-secondary" data-filter="philosophy">Philosophy</button>
+                                <button class="btn btn-sm btn-secondary" data-filter="literature">Literature</button>
+                                <button class="btn btn-sm btn-secondary" data-filter="stem">STEM</button>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="input-group">
+                                <i class="fas fa-search input-icon"></i>
+                                <input type="text" id="blog-search" placeholder="Search posts..." style="padding-left: var(--space-10);">
+                            </div>
+                        </div>
+                    </div>
+                    <p class="mt-4 text-secondary">
+                        <span id="post-count">0 posts</span> published
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Featured Posts Section -->
+        <section class="container">
+            <div class="section-header fade-in-section">
+                <h2 class="section-title">Featured Posts</h2>
+            </div>
+            
+            <div class="card fade-in-section text-center" style="background: linear-gradient(135deg, rgba(149, 164, 131, 0.1), rgba(152, 114, 132, 0.1)); padding: var(--space-8);">
+                <i class="fas fa-pen-fancy" style="font-size: 3rem; color: var(--color-primary); margin-bottom: var(--space-4);"></i>
+                <h3>Coming Soon</h3>
+                <p class="text-secondary mt-3">Featured essays will appear here once published.</p>
+            </div>
+        </section>
+        
+        <!-- Blog Post Catalog -->
+        <section class="container">
+            <div class="section-header fade-in-section">
+                <h2 class="section-title">All Posts</h2>
+            </div>
+            
+            <!-- Posts Grid - This will be populated with blog posts -->
+            <div class="grid-auto blog-posts-grid" id="blog-posts-grid">
+                <!-- Blog posts will be added here -->
+                <!-- Example structure for when you add posts:
+                
+                <article class="card hover-lift fade-in-section" data-category="philosophy" data-tags="nonduality,eastern philosophy">
+                    <div class="card-header">
+                        <span class="badge">Philosophy</span>
+                        <span class="text-sm text-tertiary mt-2">May 15, 2026</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Post Title Here</h3>
+                        <p class="text-secondary">
+                            Brief excerpt or summary of the blog post content goes here...
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="blog/posts/post-slug.html" class="btn btn-sm btn-primary">
+                            <i class="fas fa-book-open"></i> Read Post
+                        </a>
+                        <span class="text-sm text-tertiary">5 min read</span>
+                    </div>
+                </article>
+                
+                -->
+            </div>
+            
+            <!-- Placeholder when no posts -->
+            <div class="card fade-in-section text-center" id="no-posts-message">
+                <div class="card-body" style="padding: var(--space-10);">
+                    <i class="fas fa-feather-alt" style="font-size: 4rem; color: var(--color-primary); margin-bottom: var(--space-5);"></i>
+                    <h2>Posts Coming Soon</h2>
+                    <p class="lead mt-4 max-w-prose" style="margin-left: auto; margin-right: auto;">
+                        Essays exploring literature, philosophy, and STEM topics will be published here.
+                        Check back soon for new content.
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Category Descriptions -->
+        <section class="container">
+            <div class="section-header fade-in-section">
+                <h2 class="section-title">What to Expect</h2>
+            </div>
+            
+            <div class="grid-auto fade-in-section">
+                <div class="card">
+                    <div class="icon-wrapper icon-wrapper-lg">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3 class="mt-4">Philosophy</h3>
+                    <p class="text-secondary mt-3">
+                        Explorations of philosophical concepts, critical theory, questions of existence, 
+                        ethics, and consciousness.
+                    </p>
+                </div>
+                
+                <div class="card">
+                    <div class="icon-wrapper icon-wrapper-lg">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3 class="mt-4">Literature</h3>
+                    <p class="text-secondary mt-3">
+                        Critical analysis of classical and contemporary works, literary criticism, 
+                        and reflections on narrative and meaning.
+                    </p>
+                </div>
+                
+                <div class="card">
+                    <div class="icon-wrapper icon-wrapper-lg">
+                        <i class="fas fa-atom"></i>
+                    </div>
+                    <h3 class="mt-4">STEM</h3>
+                    <p class="text-secondary mt-3">
+                        Thoughts on mathematics, data science, technology, and the intersection 
+                        of technical work with broader human concerns.
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Newsletter Subscribe Section -->
+        <section class="container">
+            <div class="card fade-in-section text-center" style="background: linear-gradient(135deg, rgba(149, 164, 131, 0.1), rgba(152, 114, 132, 0.1));">
+                <div class="card-body">
+                    <h2><i class="fas fa-envelope-open-text"></i> Subscribe to New Posts</h2>
+                    <p class="lead mt-4">
+                        Get notified when new essays are published. No spam, just thoughtful content.
+                    </p>
+                    
+                    <!-- Newsletter Signup Form -->
+                    <div class="newsletter-form mt-5" style="max-width: 500px; margin: 0 auto;">
+                        <!-- Replace action URL with your Mailchimp/Buttondown/ConvertKit URL -->
+                        <form action="#" method="post" class="flex gap-3">
+                            <input type="email" name="email" placeholder="your.email@example.com" required
+                                   style="flex: 1; padding: var(--space-3) var(--space-4); border: 2px solid var(--color-border); border-radius: var(--radius-md); font-size: var(--font-size-base);">
+                            <button type="submit" class="btn btn-primary" style="white-space: nowrap;">
+                                <i class="fas fa-paper-plane"></i> Subscribe
+                            </button>
+                        </form>
+                        <p class="text-sm text-tertiary mt-3">
+                            <i class="fas fa-lock"></i> Your email will never be shared. Unsubscribe any time.
+                        </p>
+                    </div>
+                    
+                    <div class="divider" style="margin: var(--space-8) auto; width: 80%;"></div>
+                    
+                    <p class="text-secondary">Or connect via:</p>
+                    <div class="flex gap-3 justify-content-center mt-4">
+                        <a href="https://www.linkedin.com/in/varya-kern-a25baa2a2/" class="btn btn-secondary" target="_blank" rel="noopener">
+                            <i class="fab fa-linkedin-in"></i> LinkedIn
+                        </a>
+                        <a href="contact.html" class="btn btn-secondary">
+                            <i class="fas fa-envelope"></i> Email
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Varya Kern</h3>
+                    <p>Data Science & Mathematics Student<br>
+                    University of Canterbury<br>
+                    Christchurch, New Zealand</p>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/varya-kern-a25baa2a2/" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/taffycheez" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:varya.kern@gmail.com" class="social-link" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Navigation</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">About</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Connect</h3>
+                    <p>Open to internship opportunities and collaborations.</p>
+                    <p><a href="mailto:varya.kern@gmail.com">varya.kern@gmail.com</a></p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Varya Kern. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- JavaScript -->
+    <script src="js/navigation.js"></script>
+    <script src="js/scroll-animations.js"></script>
+    <script src="js/blog-filter.js"></script>
+    <script src="js/main.js"></script>
+</body>
 </html>
