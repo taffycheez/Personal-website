@@ -316,6 +316,4 @@ This website was built as a modern portfolio to showcase data science skills and
 
 ---
 
-**Built with ❤️ by Varya Kern**
-
 *Last Updated: May 2026*
