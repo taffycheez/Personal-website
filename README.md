@@ -182,7 +182,7 @@ The contact form uses [Formspree](https://formspree.io/) for handling submission
    - Go to https://netlify.com
    - Click "Add new site" → "Import an existing project"
    - Connect to your GitHub repository
-   - Click "Deploy site"
+   - Click "Deploy site" 
    - Your site will be live at `your-site-name.netlify.app`
 
 3. **Custom Domain (Optional):**
